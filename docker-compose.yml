@@ -1,5 +1,5 @@
 app:
-  image: image: http://ec2-54-77-133-141.eu-west-1.compute.amazonaws.com/myrepo:latest
+  image: http://ec2-54-77-133-141.eu-west-1.compute.amazonaws.com/myrepo:latest
   entrypoint: ["/bin/bash"]
   command: -c "sleep 5 && go-wrapper run" # sleep because the postgres container isn't ready on first start
   environment:
